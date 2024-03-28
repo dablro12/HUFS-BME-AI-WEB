@@ -1,0 +1,10 @@
+my sql 코드 작성하기
+
+CREATE TABLE userTable (
+  id int(12) NOT NULL AUTO_INCREMENT,
+  username varchar(50) NOT NULL,
+  password varchar(255) NOT NULL,
+  PRIMARY KEY(id)
+) charset=utf8;
+
+db.js에서 데이터베이스 정보 적어주기
