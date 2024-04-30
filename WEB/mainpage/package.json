@@ -1,0 +1,22 @@
+{
+    "name": "mainpage",
+    "version": "1.0.0",
+    "scripts": {
+        "client": "cd client && npm start",
+        "server": "nodemon server.js",
+        "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    },
+    "dependencies": {
+        "axios": "^1.6.8",
+        "body-parser": "^1.20.2",
+        "express": "4.19.2",
+        "material-ui": "^0.20.2",
+        "multer": "^1.4.5-lts.1",
+        "mysql": "^2.18.1",
+        "mysql2": "^3.9.6",
+        "nodemon": "3.1.0"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
