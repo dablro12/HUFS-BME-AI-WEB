@@ -1,0 +1,159 @@
+{
+    "os": "Linux-5.15.0-105-generic-x86_64-with-glibc2.17",
+    "python": "3.8.18",
+    "heartbeatAt": "2024-05-06T05:26:56.786414",
+    "startedAt": "2024-05-06T05:26:55.369676",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model",
+        "OCI-GAN",
+        "--version",
+        "v1",
+        "--save_path",
+        "/mnt/HDD/oci_models/aotgan",
+        "--cuda",
+        "0",
+        "--ts_batch_size",
+        "5",
+        "--vs_batch_size",
+        "2",
+        "--epochs",
+        "100",
+        "--loss",
+        "ce",
+        "--optimizer",
+        "Adam",
+        "--learning_rate",
+        "0.0001",
+        "--scheduler",
+        "lambda",
+        "--pretrain",
+        "yes",
+        "--pretrained_model",
+        "premodel",
+        "--error_signal",
+        "no",
+        "--wandb",
+        "yes "
+    ],
+    "state": "running",
+    "program": "./run.py",
+    "codePathLocal": "run.py",
+    "codePath": "AOTGAN/run.py",
+    "git": {
+        "remote": "https://github.com/dablro12/octc-inpainting.git",
+        "commit": "a7478ea5a63862d40a93b8e63e96a0016225e105"
+    },
+    "email": "dablro1232@gmail.com",
+    "root": "/home/eiden/eiden/octc-inpainting/src",
+    "host": "eiden",
+    "username": "eiden",
+    "executable": "/home/eiden/anaconda3/envs/eiden/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3.359875,
+        "min": 800.0,
+        "max": 5150.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 2.377,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3.53,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 915.3232879638672,
+            "used": 548.996208190918
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 31.169639587402344
+    }
+}
