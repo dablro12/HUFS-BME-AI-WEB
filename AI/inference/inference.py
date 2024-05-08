@@ -65,7 +65,7 @@ class InpaintingService:
             # Now, resize pred_image to match the original image's dimensions
             pred_image = cv2.resize(pred_image, (original_image.shape[1], original_image.shape[0]))  # Note the order of shape
             pred_image = np.clip(pred_image * 255, 0, 255).astype(np.uint8)  # Scale to 0-255 and convert to uint8
-            cv2.imwrite(os.path.join(save_path, file_name), pred_image)
+            cv2.imwrite(os.path.join(self.save_dir, file_name), pred_image)
 
     def infer(self):
         with torch.no_grad():
