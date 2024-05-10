@@ -7,32 +7,31 @@ import torch
 import os
 import cv2
 import numpy as np 
-
 class InpaintingService:
     def __init__(self, img_dir, mask_dir, save_path, visual_save_path, model_path, batch_size=1):
         self.img_dir = img_dir
         self.mask_dir = mask_dir
-        self.save_dir= save_path
-        self.visual_save_dir= visual_save_path
+        self.save_dir = save_path
+        self.visual_save_dir = visual_save_path  # 이 경로를 올바르게 설정해야 합니다.
         self.model_path = model_path
-        os.makedirs(save_path, exist_ok= True)
-        os.makedirs(visual_save_path, exist_ok= True)
+
+        # 경로가 디렉토리인지 확인하고, 필요하다면 생성합니다.
+        os.makedirs(self.save_dir, exist_ok=True)
+        os.makedirs(self.visual_save_dir, exist_ok=True)  # 오류가 발생하는 부분, 올바른 디렉토리 경로인지 확인해야 합니다.
 
         self.batch_size = batch_size
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.netG = InpaintGenerator().to(self.device)
         self.load_model()
 
-        # MKL library 환경 변수 설정
-        os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
-
         # 데이터 로더 설정
         self.test_loader = self.setup_dataloader()
 
     def load_model(self):
-        model_weights = torch.load(self.model_path, map_location=self.device)
+        model_weights = torch.load(self.model_path, map_location=self.device)['netG_state_dict']
         self.netG.load_state_dict(model_weights)
         self.netG.eval()
+
 
     def setup_dataloader(self):
         test_transform = transforms.Compose([
@@ -72,7 +71,7 @@ class InpaintingService:
             for images, masks, image_paths in self.test_loader:
                 images, masks = images.to(self.device), masks.to(self.device)
                 ### 전처리
-                masks = utils.preprocessing_mask(images, masks)
+                masks = utils.infer_preprocess_mask(images, masks)
 
                 # mask가 0이 아닌 부분에 대해 image를 mask로 대체
                 input_images = images.clone()
@@ -81,7 +80,7 @@ class InpaintingService:
                 # input_images 처리해줫으니 다시 masks를 1채널로 변경
                 masks = masks[:,0,:,:].unsqueeze(1)
                 # 입력이미지 device 할당
-                input_images = input_images.to(self.evice) 
+                input_images = input_images.to(self.device) 
 
                 ### inference
                 pred_images = self.netG(input_images, masks)  # 3+1ch
