@@ -75,10 +75,27 @@ const fs = require('fs');
 const path = require('path');
 const maindb = require('./maindb.js');
 
+
+const { PythonShell } = require('python-shell');
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
+
+
 app.use(bodyParser.json({ limit: '10mb' })); // 페이로드 크기 제한
 
 const multer = require('multer');
-const upload = multer({dest: './upload'});
+const upload = multer({ 
+  dest: './upload',
+  fileFilter: (req, file, cb) => {
+    if (!file.originalname.match(/\.(jpg|jpeg|png)$/)) {
+      return cb(new Error('Only image files are allowed!'));
+    }
+    cb(null, true);
+  }
+});
 const maskDir = path.join(__dirname, 'mask');
 
 app.get('/api/main', (req,res) => {
@@ -93,16 +110,22 @@ app.get('/api/main', (req,res) => {
 app.use('/image', express.static('./upload'));
 
 app.post('/api/main', upload.single('image'), (req,res) => {
-    let sql = 'INSERT INTO IMAGEBOARD VALUES (null, ?, ?, ?,? ,now(), 0,?)';
-    let image = '/image/' + req.file.filename;
-    let inpainted = ' ';
-    let name = req.body.name;
-    let explanation= req.body.explanation;
-    let masked = '0';
-    let params = [image, inpainted, name, explanation,masked];
+    let imageExtension = req.file.originalname.split('.').pop(); // 파일 확장자 추출
+    let imageName = req.body.name + '.' + imageExtension; // 입력한 이미지 이름에 확장자 추가
+    let imagePath = '/image/' + imageName; // 이미지 경로 생성
+    let sql = 'INSERT INTO IMAGEBOARD VALUES (null, ?, ?, ?,? ,now(), 0,null)';
+    let params = [imagePath, ' ', req.body.name, req.body.explanation];
+    
+    fs.renameSync(req.file.path, path.join(__dirname, 'upload', imageName)); // 파일 이름 변경 및 이동
+    
     maindb.query(sql, params,
         (err, rows, fields) => {
-            res.send(rows);
+            if (err) {
+                console.error('이미지 저장 실패:', err);
+                res.status(500).send('이미지 저장에 실패했습니다.');
+            } else {
+                res.send(rows);
+            }
         }
     );
 });
@@ -120,7 +143,7 @@ app.delete('/api/main/:id', (req, res) => {
 app.post('/api/saveImage', (req, res) => {
   const imageDataURL = req.body.imageDataURL;
   const base64Data = imageDataURL.replace(/^data:image\/png;base64,/, '');
-  const maskImageName = 'mask_' + req.body.name + Date.now()  + '.png'; // 고유한 파일명 생성
+  const maskImageName = 'mask_' + req.body.imageName + '.png'; // 고유한 파일명 생성
 
   fs.writeFile(path.join(maskDir, maskImageName), base64Data, 'base64', (err) => {
     if (err) {
@@ -128,18 +151,26 @@ app.post('/api/saveImage', (req, res) => {
       res.status(500).send('이미지 저장에 실패했습니다.');
     } else {
       const maskImagePath = '/mask/' + maskImageName;
-      const imageId = req.body.imageId; // 클라이언트에서 이미지 ID를 받아옵니다.
+      const imageName = req.body.imageName; // 클라이언트에서 이미지 ID를 받아옵니다.
+      
+
       // 데이터베이스에 mask 이미지 경로 저장
-      maindb.query('UPDATE IMAGEBOARD SET mask = ? WHERE id = ?', [maskImagePath, imageId], (error, results) => {
-        if (error) {
-          console.error('데이터베이스 업데이트 실패:', error);
-          res.status(500).send('데이터베이스 업데이트에 실패했습니다.');
-        } else {
-          res.send({ maskImagePath });
+      maindb.query(
+        'UPDATE IMAGEBOARD SET mask = ? WHERE name = ?',
+        [maskImagePath, imageName],
+        (error, results) => {
+          if (error) {
+            console.error('데이터베이스 업데이트 실패:', error);
+            res.status(500).send('데이터베이스 업데이트에 실패했습니다.');
+          } else {
+            res.send({ maskImagePath });
+          }
         }
-      });
+      );
     }
   });
 });
 
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
+
