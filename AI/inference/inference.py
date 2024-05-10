@@ -16,8 +16,8 @@ class InpaintingService:
         self.model_path = model_path
 
         # 경로가 디렉토리인지 확인하고, 필요하다면 생성합니다.
-        os.makedirs(self.save_dir, exist_ok=True)
-        os.makedirs(self.visual_save_dir, exist_ok=True)  # 오류가 발생하는 부분, 올바른 디렉토리 경로인지 확인해야 합니다.
+        # os.makedirs(self.save_dir, exist_ok=True)
+        # os.makedirs(self.visual_save_dir, exist_ok=True)  # 오류가 발생하는 부분, 올바른 디렉토리 경로인지 확인해야 합니다.
 
         self.batch_size = batch_size
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'

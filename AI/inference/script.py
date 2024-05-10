@@ -1,9 +1,16 @@
 import argparse
 from inference import InpaintingService
+import os 
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Inpainting Service Arguments")
     
+    parser.add_argument('--env', type = str,required= True,
+                        help = 'Seeting your OS')
+
+    parser.add_argument('--project_dir', type = str,required= True,
+                        help = 'Git Project Present PATH')
+
     parser.add_argument("--img_dir", type=str, default='/home/eiden/eiden/capstone/HUFS-BME-AI-WEB/WEB/inference/img',
                         help="Path to the directory containing input images.")
     
@@ -27,10 +34,10 @@ def parse_arguments():
 if __name__ == "__main__":
     args = parse_arguments()
     inpainting_service = InpaintingService(
-        img_dir = args.img_dir,
-        mask_dir = args.mask_dir,
-        model_path = args.model_path,
-        save_path = args.save_dir,
-        visual_save_path = args.visual_save_dir,
+        img_dir = os.path.join(args.project_dir, args.img_dir),
+        mask_dir = os.path.join(args.project_dir, args.mask_dir),
+        model_path = os.path.join(args.project_dir, args.model_path),
+        save_path = os.path.join(args.project_dir, args.save_dir),
+        visual_save_path = os.path.join(args.project_dir, args.visual_save_dir),
         batch_size = args.batch_size)
     inpainting_service.infer()
