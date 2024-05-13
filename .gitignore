@@ -6,6 +6,7 @@ __pycache__/
 
 # 특정 숨김 파일 허용
 !.gitignore
+!.gitattributes
 !.env
 
 # 기타 일반적으로 무시하는 파일들
