@@ -1,3 +1,4 @@
+
 import React from 'react';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
@@ -18,6 +19,8 @@ class Customer extends React.Component {
       imageWidth: 0,
       imageHeight: 0,
       selectedImageName: null, // 선택된 이미지의 ID를 저장할 상태를 추가합니다.
+      imageModalOpen: false,
+      selectedImage: null
     };
   }
 
@@ -34,11 +37,26 @@ class Customer extends React.Component {
   handleClose = () => {
     this.setState({ canvasVisible: false });
   };
+//inpainted 이미지를 선택하면 원본 크기를 볼 수 있는 것 구현
+  openImageModal = (image) => {
+    this.setState({
+      imageModalOpen: true,
+      selectedImage: image,
+    });
+  };
+
+  closeImageModal = () => {
+    this.setState({
+      imageModalOpen: false,
+      selectedImage: null,
+    });
+  };
 
   render() {
+
     return (
       <TableRow>
-        <TableCell>{this.props.id}</TableCell>
+        <TableCell>{this.props.num}</TableCell>
         <TableCell>
           <img
             src={this.props.image}
@@ -55,7 +73,26 @@ class Customer extends React.Component {
           />
         </TableCell>
         <TableCell>
-          <img src={this.props.inpainted} alt='profile'/>
+          {this.props.mask ? (
+            <img 
+              src={this.props.mask} 
+              onClick={() => this.openImageModal(this.props.mask)}
+              width='200' 
+              alt='업로드 오류'/>
+          ) : (
+            <span>No Image</span>
+          )}
+        </TableCell>
+        <TableCell>
+        {this.props.inpainted ? (
+            <img 
+              src={this.props.inpainted} 
+              onClick={() => this.openImageModal(this.props.inpainted)}
+              width='200' 
+              alt='업로드 오류'/>
+          ) : (
+            <span>No Image</span>
+          )}
         </TableCell>
         <TableCell>{this.props.name}</TableCell>
         <TableCell>{this.props.explanation}</TableCell>
@@ -87,6 +124,31 @@ class Customer extends React.Component {
           </DialogContent>
           <DialogActions>
             <Button onClick={this.handleClose} autoFocus>
+              Close
+            </Button>
+          </DialogActions>
+        </Dialog>
+
+        <Dialog
+          open={this.state.imageModalOpen}
+          onClose={this.closeImageModal}
+          aria-labelledby="alert-dialog-title"
+          aria-describedby="alert-dialog-description"
+          maxWidth="xl"
+          fullWidth
+        >
+          <DialogTitle id="alert-dialog-title">
+            {"Original Image"}
+          </DialogTitle>
+          <DialogContent>
+            <img
+              src={this.state.selectedImage}
+              alt="profile"
+              style={{ width: '100%' }}
+            />
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={this.closeImageModal} autoFocus>
               Close
             </Button>
           </DialogActions>

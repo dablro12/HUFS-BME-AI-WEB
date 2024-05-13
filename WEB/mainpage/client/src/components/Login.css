@@ -1,0 +1,151 @@
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: rgb(150, 209, 148);
+  margin: 50px;
+
+}
+
+.background {
+  background-color: white;
+  height: auto;
+  width: 90%;
+  max-width: 450px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  width: 90%;
+  max-width: 450px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.login {
+  border: none;
+  border-bottom: 2px solid #D1D1D4;
+  background: none;
+  padding: 10px;
+  font-weight: 700;
+  transition: .2s;
+  width: 75%;
+  background-color: white;
+  height: auto;
+  width: 90%;
+  max-width: 450px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+  
+}
+
+.login:active,
+.login:focus,
+.login:hover {
+  outline: none;
+  border-bottom-color: rgb(68, 112, 67);
+}
+
+.btn {
+  border: none;
+  width: 75%;
+  background-color: rgb(68, 112, 67);
+  color: white;
+  padding: 15px 0;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s;
+
+}
+
+.btn:hover {
+  background-color: rgb(49, 82, 48);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 50px;
+}
+
+.background {
+  background-color: rgb(48, 133, 214);
+  height: auto;
+  width: 90%;
+  max-width: 450px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  width: 90%;
+  max-width: 450px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.login {
+  border: none;
+  border-bottom: 2px solid #D1D1D4;
+  background: none;
+  padding: 10px;
+  font-weight: 700;
+  transition: .2s;
+  width: 75%;
+  background-color: white;
+  height: auto;
+  width: 90%;
+  max-width: 450px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+}
+
+.login:focus {
+  outline: none;
+  border-bottom-color: rgb(68, 112, 67);
+}
+
+.btn {
+  border: none;
+  width: 75%;
+  background-color: rgb(68, 112, 67);
+  color: white;
+  padding: 15px 0;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn:hover {
+  background-color: rgb(49, 82, 48);
+}

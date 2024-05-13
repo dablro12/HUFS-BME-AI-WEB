@@ -68,15 +68,16 @@ class Canvas extends React.Component {
 
     this.setState({
       isDrawing: true,
-      lastX: e.offsetX,
-      lastY: e.offsetY,
+      // lastX: e.offsetX,
+      // lastY: e.offsetY,
     });
 
     ctx.moveTo(e.offsetX, e.offsetY);
   };
 
   draw = (e) => {
-    const { isDrawing, lastX, lastY } = this.state;
+    // const { isDrawing, lastX, lastY } = this.state;
+    const { isDrawing } = this.state;
     if (!isDrawing) return;
 
     const canvas = this.canvasRef.current;
@@ -86,8 +87,8 @@ class Canvas extends React.Component {
     ctx.stroke();
 
     this.setState({
-      lastX: e.offsetX,
-      lastY: e.offsetY,
+      // lastX: e.offsetX,
+      // lastY: e.offsetY,
     });
 
     // 새로운 선을 시작
