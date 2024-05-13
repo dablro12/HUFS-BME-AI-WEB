@@ -8,7 +8,7 @@ __pycache__/
 !.gitignore
 !.gitattributes
 !.env
-
+!.bin
 # 기타 일반적으로 무시하는 파일들
 *.pyc
 *.pyo
