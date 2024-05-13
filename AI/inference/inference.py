@@ -152,7 +152,7 @@ class InpaintingService:
 
         else:
             raise ValueError("#"* 30 , "Invalid model name", "#"* 30)
-        model_weights = torch.load(self.model_path, map_location=self.device)
+        model_weights = torch.load(self.model_path, map_location=self.device)['netG_state_dict']
         self.netG.load_state_dict(model_weights)
         self.netG.eval()
 
