@@ -1,11 +1,5 @@
-AI/inference/model/weight/ filter=lfs diff=lfs merge=lfs -text
-WEB/inference filter=lfs diff=lfs merge=lfs -text
 AI/inference/model/weight/ocigan.pt filter=lfs diff=lfs merge=lfs -text
 AI/inference/model/weight/vae.pt filter=lfs diff=lfs merge=lfs -text
-WEB/inference/img filter=lfs diff=lfs merge=lfs -text
-WEB/inference/mask filter=lfs diff=lfs merge=lfs -text
-WEB/inference/res filter=lfs diff=lfs merge=lfs -text
-WEB/inference/res_compare filter=lfs diff=lfs merge=lfs -text
 WEB/inference/res_compare/test1.png filter=lfs diff=lfs merge=lfs -text
 WEB/inference/res_compare/test2.png filter=lfs diff=lfs merge=lfs -text
 WEB/inference/img/test1.png filter=lfs diff=lfs merge=lfs -text
@@ -18,3 +12,4 @@ WEB/inference/res_compare/test7.png filter=lfs diff=lfs merge=lfs -text
 WEB/inference/res/test1.png filter=lfs diff=lfs merge=lfs -text
 WEB/inference/res/test2.png filter=lfs diff=lfs merge=lfs -text
 WEB/inference/res/test7.png filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
