@@ -17,8 +17,11 @@ def parse_arguments():
     parser.add_argument("--mask_dir", type=str, default='/home/eiden/eiden/capstone/HUFS-BME-AI-WEB/WEB/inference/mask',
                         help="Path to the directory containing mask images.")
     
-    parser.add_argument("--model_path", type=str, default='/home/eiden/eiden/capstone/HUFS-BME-AI-WEB/AI/inference/model/weight/OCI-GAN-Generator.pt',
-                        help="Path to the trained model.")
+    parser.add_argument("--model_name", type=str, default='ocigan',
+                        help="name to the trained model.")
+    
+    parser.add_argument("--model_dir", type=str, default='/home/eiden/eiden/capstone/HUFS-BME-AI-WEB/AI/inference/model/weight/',
+                        help="Dir to the trained models.")
     
     parser.add_argument("--save_dir", type=str, default='/home/eiden/eiden/capstone/HUFS-BME-AI-WEB/WEB/inference/res',
                         help="Path to save the resulting images.")
@@ -36,8 +39,12 @@ if __name__ == "__main__":
     inpainting_service = InpaintingService(
         img_dir = os.path.join(args.project_dir, args.img_dir),
         mask_dir = os.path.join(args.project_dir, args.mask_dir),
-        model_path = os.path.join(args.project_dir, args.model_path),
+        model_name = args.model_name,
+        model_path = os.path.join(args.project_dir, args.model_dir, args.model_name + '.pt'),# model weight path 
         save_path = os.path.join(args.project_dir, args.save_dir),
         visual_save_path = os.path.join(args.project_dir, args.visual_save_dir),
-        batch_size = args.batch_size)
+        sql_config_path = os.path.join(args.project_dir, 'AI/inference/mysql_config.json'),
+        batch_size = args.batch_size
+    )
+
     inpainting_service.infer()

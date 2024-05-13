@@ -1,0 +1,16 @@
+# 숨김 파일 무시
+.*
+
+# __pycache__ 디렉토리 무시
+__pycache__/
+
+# 특정 숨김 파일 허용
+!.gitignore
+!.env
+
+# 기타 일반적으로 무시하는 파일들
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
