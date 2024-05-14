@@ -17,3 +17,7 @@ __pycache__/
 *.pyd
 *.swp
 *.swo
+
+# aws pem file ignore 무조건
+*.pem
+bme-ai.pem
