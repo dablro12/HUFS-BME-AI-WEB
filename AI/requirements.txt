@@ -1,0 +1,9 @@
+torch
+torchvision
+pandas
+matplotlib
+numpy
+opencv-python
+pymysql
+flask
+fastapi

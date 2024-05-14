@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    build: ./WEB
+    ports:
+      - "3000:3000"
+    depends_on:
+      - ai
+
+  ai:
+    build: ./AI
+    ports:
+      - "5001:5000"
