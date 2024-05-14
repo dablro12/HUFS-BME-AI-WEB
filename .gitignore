@@ -1,6 +1,8 @@
 # 숨김 파일 무시
 .*
 
+/node_modules/
+
 # __pycache__ 디렉토리 무시
 __pycache__/
 

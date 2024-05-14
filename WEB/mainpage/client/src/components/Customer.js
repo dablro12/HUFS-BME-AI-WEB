@@ -96,6 +96,7 @@ class Customer extends React.Component {
         </TableCell>
         <TableCell>{this.props.name}</TableCell>
         <TableCell>{this.props.explanation}</TableCell>
+        <TableCell>{this.props.uploader}</TableCell>
         <TableCell>
           <DataDelete
             stateRefresh={this.props.stateRefresh}

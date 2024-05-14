@@ -36,6 +36,7 @@ def parse_arguments():
 
 if __name__ == "__main__":
     args = parse_arguments()
+    print(args.model_name)
     inpainting_service = InpaintingService(
         img_dir = os.path.join(args.project_dir, args.img_dir),
         mask_dir = os.path.join(args.project_dir, args.mask_dir),
