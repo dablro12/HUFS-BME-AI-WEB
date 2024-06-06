@@ -1,4 +1,4 @@
-# OCI-GAN: Ovarian Cyst Inpaint GAN
+![grad-cam](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/c2b0631d-d94b-43c4-843a-f87c7d808317)# OCI-GAN: Ovarian Cyst Inpaint GAN
 **Privacy Safe Deep Learning DE-marked Models on Ultrasound Images of Ovarian Cysts**
 
 ## Paper
@@ -22,7 +22,6 @@
 ## Reconstuction comparsion of De-marked Method
 ![recon_res](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/3b89399e-906e-437c-883e-e0bd2af4ba97)
 
-
 ## Classification Comparision of Train Data Type
 ![class_res](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/4c73cb3f-7723-42d8-bdfe-0bae954edac7)
 
@@ -30,7 +29,7 @@
 ![ext_result](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/c75063f5-f2c2-4794-8f06-a13229839a5f)
 
 ## Grad-CAM Analysis
-![Grad-CAM Analysis](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/9c574eb7-01c8-405b-bb14-49945051aa9c)
+![gradcam](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/aa934713-459e-4bbb-844c-b4ce61acf65e)
 
 ## WEB Flowchart
 <img width="1280" alt="스크린샷 2024-06-02 오후 3 10 32" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/102420d9-2c4f-4b7b-ae9e-6d55514d849c">
