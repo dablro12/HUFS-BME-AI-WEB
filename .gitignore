@@ -3,6 +3,18 @@
 # __pycache__ 디렉토리 무시
 __pycache__/
 
+# AI/train 디렉토리 무시
+AI/train/
+
+# pycache 파일 무시
+*.pyc
+
+# 특정 확장자 파일 무시
+*.log
+*.log.*
+*.log-*
+*.log_*
+
 # 특정 숨김 파일 허용
 !.gitignore
 !.gitattributes

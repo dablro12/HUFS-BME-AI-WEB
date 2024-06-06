@@ -26,11 +26,26 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 ![detail_network](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/a21ee5df-b295-4797-bedd-243b5c7ad7de)
 
 ### Reconstuction comparsion of De-marked Method
-![recon_res](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/3b89399e-906e-437c-883e-e0bd2af4ba97)
+| Generator Type       | MAE   | MSE   | PSNR    | SSIM   | FID   |
+|----------------------|-------|-------|---------|--------|-------|
+| Original Image (Non) | 84.2234 | 0.0551 | 121.5442 | 5.1533 | 13.2123 |
+| U-Net                | 49.7447 | 0.0149 | 249.8968 | 7.7485 | 9.6482  |
+| VAE                  | 4.0569  | 0.0078 | 295.2726 | 8.4081 | 2.2082  |
+| Ours (OCI-GAN)       | 3.0920  | 0.0076 | 307.6688 | 8.5008 | 2.1757  |
 
 ### Classification Comparision of Train Data Type
-![class_res](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/4c73cb3f-7723-42d8-bdfe-0bae954edac7)
-
+| Classification Model  | Inpainting Method | Recall↑ | Specificity↑ | PPV↑  | NPV↑  | F1_score↑ | Accuracy↑ | roc_auc_score↑ |
+|-----------------------|-------------------|---------|--------------|-------|-------|-----------|-----------|----------------|
+| Convext-L             |                   |         |              |       |       |           |           |                |
+|                       | Original (Not)    | 0.687   | 0.851        | 0.671 | 0.860 | 0.678     | 0.801     | 0.837          |
+|                       | U-Net             | 0.628   | 0.873        | 0.686 | 0.842 | 0.656     | 0.798     | 0.816          |
+|                       | VAE               | 0.679   | 0.844        | 0.657 | 0.856 | 0.668     | 0.793     | 0.837          |
+|                       | Ours (OCI-GAN)    | 0.688   | 0.841        | 0.656 | 0.859 | 0.671     | 0.794     | 0.838          |
+| Swin-Transformer-L    |                   |         |              |       |       |           |           |                |
+|                       | Original (Not)    | 0.741   | 0.812        | 0.640 | 0.884 | 0.694     | 0.796     | 0.846          |
+|                       | U-Net             | 0.748   | 0.769        | 0.588 | 0.874 | 0.658     | 0.762     | 0.821          |
+|                       | VAE               | 0.758   | 0.783        | 0.607 | 0.880 | 0.674     | 0.776     | 0.843          |
+|                       | Ours (OCI-GAN)    | 0.758   | 0.810        | 0.632 | 0.877 | 0.682     | 0.789     | 0.845          |
 ### Result of Proposed-Method
 ![ext_result](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/c75063f5-f2c2-4794-8f06-a13229839a5f)
 
