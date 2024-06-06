@@ -16,6 +16,15 @@
 ## DL Flowchart
 ![DL Flowchart](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/2fd63288-2259-4a81-957d-4e0d71289217)
 
+## Detail of Network
+![detail_network](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/a21ee5df-b295-4797-bedd-243b5c7ad7de)
+
+## Reconstuction comparsion of De-marked Method
+![recon_res](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/5f470785-68bb-4d63-93c1-f389390ef3d7)
+
+## Classification Comparision of Train Data Type
+![class_res](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/c2b15ed8-6d53-4b9d-9ee0-bb7bde52e3be)
+
 ## Grad-CAM Analysis
 ![Grad-CAM Analysis](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/9c574eb7-01c8-405b-bb14-49945051aa9c)
 
