@@ -20,8 +20,7 @@ class InpaintGenerator(nn.Module):
         ) 
         rates = '1+2+4+8'
 
-
-        self.middle = nn.Sequential(*[AOTBlock(256, rates) for _ in range(8)])
+        self.middle = nn.Sequential(*[OCIBlock(256, rates) for _ in range(8)])
 
         self.decoder = nn.Sequential(
             UpConv(256, 128),
@@ -52,9 +51,9 @@ class UpConv(nn.Module):
         return self.conv(F.interpolate(x, scale_factor=2, mode='bilinear', align_corners=True))
 
 
-class AOTBlock(nn.Module):
+class OCIBlock(nn.Module):
     def __init__(self, dim, rates):
-        super(AOTBlock, self).__init__()
+        super(OCIBlock, self).__init__()
         self.rates = list(map(int, list(rates.split('+'))))
 
         for i, rate in enumerate(self.rates):
@@ -88,8 +87,6 @@ def my_layer_norm(feat):
     return feat
 
 
-
-
 # ----- discriminator -----
 class Discriminator(nn.Module):
     def __init__(self):
@@ -112,3 +109,5 @@ class Discriminator(nn.Module):
         feat = self.conv(x)
         return feat
 
+def OCIGAN(width, height):
+    return InpaintGenerator()

@@ -8,8 +8,8 @@ class load_model:
         self.device = device
     
     def load(self, model_name):
-        if model_name == 'aot-gan':
-            model = self.aot_gan().to(self.device)
+        if model_name == 'oci-gan':
+            model = self.oci_gan().to(self.device)
             print(f"model name : {model_name}")
         else:
             raise ValueError('Model not found')        
@@ -23,8 +23,8 @@ class load_model:
         print('#'*30,'Load Pretrained Weight','#'*30)
         return model 
     
-    def aot_gan(self):
-        from model.aotgan import InpaintGenerator, Discriminator
+    def oci_gan(self):
+        from AI.inference.model.ocigan import InpaintGenerator, Discriminator
         
         model = InpaintGenerator()
         return model
