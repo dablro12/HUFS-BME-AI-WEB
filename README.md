@@ -11,7 +11,7 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 
 ## AI-Part : OCI-GAN: Ovarian Cyst Inpaint GAN 
 
-### Paper
+### Paper 1 
 **High-Resolution Inpainting GAN for Deep Learning Classification Models on Ultrasound Images of Ovarian Cysts: OCI-GAN**
 
 ### Summary
@@ -39,7 +39,7 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 
 ## Model Serving-Part : OCI-GAN: Ovarian Cyst Inpaint GAN 
 
-### Paper
+### Paper 2
 **인공지능을 활용한 초음파 이미지 Inpainting 모델 및 의료 딥러닝 서비스 웹 플랫폼 제작**
 
 ### Summary
