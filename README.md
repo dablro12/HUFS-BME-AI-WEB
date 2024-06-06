@@ -6,7 +6,7 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 | **Daehyeon Choe** | **Yeongjin Jeong** |
 | :---------------: | :-----------: |
 | [<img src="https://github.com/dablro12.png" height=100 width=100><br/>@dablro12](https://github.com/dablro12) | [<img src="https://github.com/yeongjinjeong.png" height=100 width=100><br/>@yeongjinjeong](https://github.com/yeongjinjeong) |
-| Lead <br/> AI | Fullstack <br/> Engineer |
+| Lead <br/> AI Engineer | Fullstack <br/> Engineer |
 
 
 ## AI-Part : OCI-GAN: Ovarian Cyst Inpaint GAN 
