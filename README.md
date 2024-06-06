@@ -22,11 +22,6 @@
 ## WEB Flowchart
 <img width="1280" alt="스크린샷 2024-06-02 오후 3 10 32" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/102420d9-2c4f-4b7b-ae9e-6d55514d849c">
 
-## Using : Web Build
-
-1. **Create Local Database**: Follow the instructions in `WEB/login_page/logintable_database_code.txt` to set up your local database.
-2. **Run Server**: In the terminal, execute `node main.js`.
-3. **Access the Application**: Open your browser and go to `localhost:3000`.
 
 ---
 This README provides a concise summary of the OCI-GAN project, its objectives, methodologies, and key findings, as well as step-by-step instructions to set up and run the login page for the application.
