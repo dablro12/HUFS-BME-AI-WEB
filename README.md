@@ -14,10 +14,10 @@
 결론적으로 불필요한 주석을 제거하는 OCI-GAN을 통해 의료 영상의 진단 정확성을 위한 깨끗한 데이터의 중요성을 강조하고, 초음파 이미지 데이터 문제와 난소낭종 초음파 영상 딥러닝 모델 성능에 기여할 것으로 기대할 수 있다.
 
 ## DL Flowchart
-![DL Flowchart]('img/dl_flow.png')
+![DL Flowchart]('./img/dl_flow.png')
 
 ## Grad-CAM Analysis
-![Grad-CAM Analysis]('img/gradcam_analysis.png')
+![Grad-CAM Analysis]('./img/gradcam_analysis.png')
 
 
 ## Using : Web Build
