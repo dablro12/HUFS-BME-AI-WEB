@@ -19,7 +19,8 @@
 ## Grad-CAM Analysis
 ![Grad-CAM Analysis](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/9c574eb7-01c8-405b-bb14-49945051aa9c)
 
-
+## WEB Flowchart
+<img width="624" alt="스크린샷 2024-06-02 오후 3 10 32" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/102420d9-2c4f-4b7b-ae9e-6d55514d849c">
 
 ## Using : Web Build
 
