@@ -34,12 +34,12 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 | Ours (OCI-GAN)       | 3.0920  | 0.0076 | 307.6688 | 8.5008 | 2.1757  |
 
 ### Classification Comparision of Train Data Type using Convext-L
-| Classification Model  | Inpainting Method | Recall↑ | Specificity↑ | PPV↑  | NPV↑  | F1_score↑ | Accuracy↑ | roc_auc_score↑ |
-|-----------------------|-------------------|---------|--------------|-------|-------|-----------|-----------|----------------|
-| Convext-L    | Original    | 0.741   | 0.812        | 0.640 | 0.884 | 0.694     | 0.796     | 0.846          |
-| Convext-L    | U-Net             | 0.748   | 0.769        | 0.588 | 0.874 | 0.658     | 0.762     | 0.821          |
-| Convext-L    | VAE               | 0.758   | 0.783        | 0.607 | 0.880 | 0.674     | 0.776     | 0.843          |
-| Convext-L    | Ours     | 0.758   | 0.810        | 0.632 | 0.877 | 0.682     | 0.789     | 0.845          |
+| Inpainting Method | Recall↑ | Specificity↑ | PPV↑  | NPV↑  | F1_score↑ | Accuracy↑ | roc_auc_score↑ |
+|-------------------|---------|--------------|-------|-------|-----------|-----------|----------------|
+| Original    | 0.741   | 0.812        | 0.640 | 0.884 | 0.694     | 0.796     | 0.846          |
+| U-Net             | 0.748   | 0.769        | 0.588 | 0.874 | 0.658     | 0.762     | 0.821          |
+| VAE               | 0.758   | 0.783        | 0.607 | 0.880 | 0.674     | 0.776     | 0.843          |
+| Ours     | 0.758   | 0.810        | 0.632 | 0.877 | 0.682     | 0.789     | 0.845          |
 ### Result of Proposed-Method
 ![ext_result](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/c75063f5-f2c2-4794-8f06-a13229839a5f)
 
