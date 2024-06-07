@@ -1,4 +1,4 @@
-![autoinpaint](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/b940250f-01aa-475e-98c9-d93e0f29cf60)# SUPPORT: Secure Ultrasound Patient data Protection and Optimization Tool using de-marked model
+# SUPPORT: Secure Ultrasound Patient data Protection and Optimization Tool using de-marked model
 
 
 # Member
