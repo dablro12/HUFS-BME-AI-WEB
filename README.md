@@ -68,9 +68,22 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 ### WEB Flowchart
 <img width="1280" alt="스크린샷 2024-06-02 오후 3 10 32" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/102420d9-2c4f-4b7b-ae9e-6d55514d849c">
 
+### Main Page
+<img width="1280" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/e4360190-916c-415a-91ca-aa256a423a3a">
 
-### Demo Video
-https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/53101935-0660-4503-804f-8d73bc147633
+###Login Page
+<img width="1000" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/e1dc19bc-810f-4426-8308-bc362fa127f6">
+
+### SignUp Page
+<img width="1000" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/418de09a-326f-4469-a533-050950f79bdf">
+
+### Upload Dialog
+<img width="1000" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/a32488f9-09ed-4551-a120-b0817889ea32">
+
+### Masking Dialog
+<img width="1280" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/3287be27-62d7-41da-b9f4-21517b5e3c1e">
+
+
 
 ---
 This README provides a concise summary of the OCI-GAN project, its objectives, methodologies, and key findings, as well as step-by-step instructions to set up and run the login page for the application.
