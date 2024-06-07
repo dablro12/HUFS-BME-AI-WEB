@@ -72,20 +72,8 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 ### Database Schema
 <img width="1280" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/7f13ddf2-3dc1-430c-a94d-7d924b71bdca">
 
-### Main Page
-<img width="1280" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/e4360190-916c-415a-91ca-aa256a423a3a">
-
-### Login Page
-<img width="800" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/e1dc19bc-810f-4426-8308-bc362fa127f6">
-
-### SignUp Page
-<img width="800" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/418de09a-326f-4469-a533-050950f79bdf">
-
-### Upload Dialog
-<img width="800" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/a32488f9-09ed-4551-a120-b0817889ea32">
-
-### Masking Dialog
-<img width="1280" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/3287be27-62d7-41da-b9f4-21517b5e3c1e">
+### Demo Execution Video
+https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/0fddbe58-2545-4a7a-89ae-99ae02f4d391
 
 
 
