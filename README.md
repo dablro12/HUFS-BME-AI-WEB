@@ -46,7 +46,7 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 | U-Net             | 0.748   | 0.769        | 0.588 | 0.874 | 0.658     | 0.762     | 0.821          |
 | VAE               | 0.758   | 0.783        | 0.607 | 0.880 | 0.674     | 0.776     | 0.843          |
 | OCI-GAN     | 0.758   | 0.810        | 0.632 | 0.877 | 0.682     | 0.789     | 0.845          |
-### Result of Proposed-Method
+### Result of Proposed-Method with [PCOS: Open-Source Dataset](https://www.kaggle.com/datasets/prasoonkottarathil/polycystic-ovary-syndrome-pcos)
 ![ext_result](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/c75063f5-f2c2-4794-8f06-a13229839a5f)
 
 ### Grad-CAM Analysis
