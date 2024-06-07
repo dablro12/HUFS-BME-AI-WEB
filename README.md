@@ -1,4 +1,4 @@
-# SUPPORT: Secure Ultrasound Patient data Protection and Optimization Tool using de-marked model
+![autoinpaint](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/b940250f-01aa-475e-98c9-d93e0f29cf60)# SUPPORT: Secure Ultrasound Patient data Protection and Optimization Tool using de-marked model
 
 
 # Member
@@ -42,10 +42,18 @@ bash AI/inference/run.sh
 이를 위해 Residual Block 기반의 아키텍처를 특징으로 하는 인페인팅 GAN 모델을 도입하여, 주석을 제거하고 고해상도 인페인팅 이미지를 생성하였다. 이 과정에서 다중 가중치 손실 함수와 깊은 레이어의 적용을 통해 모델의 성능을 극대화하였다. 또한, 2,965개의 데이터 세트를 활용하여 난소낭종 초음파 이미지 분류 모델에 전이 학습을 적용함으로써, 분류 모델의 성능 향상을 도모하였다.
 
 ### DL Flowchart
-![DL Flowchart](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/2fd63288-2259-4a81-957d-4e0d71289217)
+![autoinpaint](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/656a0e22-f649-4b78-a347-97b52e6b525e)
 
 ### Detail of Network
 ![detail_network](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/a21ee5df-b295-4797-bedd-243b5c7ad7de)
+
+### Segmentation comparision of Models
+| Segment Model       | Dice↑   | mIOU↑   | Accuracy↑ | Hausdorff↓ |
+|----------------------|-------|-------|---------|--------|
+| UNET++ | 0.890 | 0.801 | 0.925 | 14.002 |
+| UNET                | 0.899 | 0.813 | 0.921 | 13.941 |
+| MAnet                  | 0.903  | 0.819 | 0.934 | 14.026 |
+| SwinUNETRv2       | 0.934  | 0.871 | 0.953 | 12.855 |
 
 ### Reconstuction comparsion of De-marked Method
 | Generator Type       | MAE   | MSE   | PSNR    | SSIM   | FID   |
@@ -55,7 +63,8 @@ bash AI/inference/run.sh
 | VAE                  | 4.0569  | 0.0078 | 295.2726 | 8.4081 | 2.2082  |
 | OCI-GAN       | 3.0920  | 0.0076 | 307.6688 | 8.5008 | 2.1757  |
 
-### Classification Comparision of Train Data Type using Convext-L
+
+### Classification Comparision of different Train Data with Original Image Type using Convext-L
 | Inpainting Method | Recall↑ | Specificity↑ | PPV↑  | NPV↑  | F1_score↑ | Accuracy↑ | roc_auc_score↑ |
 |-------------------|---------|--------------|-------|-------|-----------|-----------|----------------|
 | Original    | 0.741   | 0.812        | 0.640 | 0.884 | 0.694     | 0.796     | 0.846          |
