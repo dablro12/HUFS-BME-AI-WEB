@@ -17,7 +17,7 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 
 ## AI-Part : OCI-GAN: Ovarian Cyst Inpaint GAN 
 
-### Usage
+### Usage of the model
 if you want to use this model, you can use the following command.
 1. Clone this repository
 ```
@@ -26,7 +26,7 @@ git clone https://github.com/dablro12/HUFS-BME-AI-WEB.git
 
 2. Install the required packages
 ```
-pip install -r requirements.txt
+pip install -r AI/requirements.txt
 ```
 
 3. Run the model
