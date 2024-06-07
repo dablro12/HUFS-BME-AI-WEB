@@ -9,6 +9,11 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 | Lead <br/> AI Engineer | Fullstack <br/> Engineer |
 
 
+# DL-WEB Overall Flow Chart 
+![overallflow](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/08c21c7f-e8da-4f48-a718-bdfe942c3801)
+
+
+
 ## AI-Part : OCI-GAN: Ovarian Cyst Inpaint GAN 
 
 ### Paper 1 
@@ -63,10 +68,9 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 ### WEB Flowchart
 <img width="1280" alt="스크린샷 2024-06-02 오후 3 10 32" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/102420d9-2c4f-4b7b-ae9e-6d55514d849c">
 
+
 ### Demo Video
 https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/53101935-0660-4503-804f-8d73bc147633
-
-
 
 ---
 This README provides a concise summary of the OCI-GAN project, its objectives, methodologies, and key findings, as well as step-by-step instructions to set up and run the login page for the application.
