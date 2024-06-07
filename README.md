@@ -12,7 +12,7 @@ The team name that developed the **HUFS BME Capstone 2024** project is **공태�
 
 
 # SUPPORT Flow Chart 
-![overallflow](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/acb53160-6478-467f-afc3-10e23348bf8a)
+![image](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/d27a1937-48d7-4b24-9ece-9e3d690e8cbb)
 
 ## AI-Part : OCI-GAN: Ovarian Cyst Inpaint GAN 
 
