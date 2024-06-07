@@ -2,7 +2,7 @@
 
 
 # Member
-The team name that developed the **HUFS BME Capstone 2024** project is **"모두가 실패하고 우리와 공태윤팀만 살아남는다!" - 공태윤팬클럽회장단**.
+The team name that developed the **HUFS BME Capstone 2024** project is **공태윤독서클럽회장단**
 
 | **Daehyeon Choe** | **Yeongjin Jeong** |
 | :---------------: | :-----------: |
