@@ -1,4 +1,4 @@
-![overallflow](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/7ce28a2a-83b0-4b3c-8f10-a2451bae4d46)# SUPPORT: Secure Ultrasound Patient data Protection and Optimization Tool using de-marked model
+# SUPPORT: Secure Ultrasound Patient data Protection and Optimization Tool using de-marked model
 
 
 # Member
