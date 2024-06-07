@@ -1,4 +1,5 @@
-# Privacy Safe Deep Learning DE-marked model utilized Web Framework on Ultrasound Images of Ovarian Cysts
+# SUPPORT: Secure Ultrasound Patient data Protection and Optimization Tool using de-marked model
+
 
 # Member
 The team name that developed the **HUFS BME Capstone 2024** project is **BME19**.
