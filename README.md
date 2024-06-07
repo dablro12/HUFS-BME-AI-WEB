@@ -71,7 +71,7 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 ### Main Page
 <img width="1280" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/e4360190-916c-415a-91ca-aa256a423a3a">
 
-###Login Page
+### Login Page
 <img width="1000" alt="image" src="https://github.com/dablro12/HUFS-BME-AI-WEB/assets/134537573/e1dc19bc-810f-4426-8308-bc362fa127f6">
 
 ### SignUp Page
