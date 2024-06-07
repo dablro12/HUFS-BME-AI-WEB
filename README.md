@@ -1,4 +1,4 @@
-# SUPPORT: Secure Ultrasound Patient data Protection and Optimization Tool using de-marked model
+![overallflow](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/7ce28a2a-83b0-4b3c-8f10-a2451bae4d46)# SUPPORT: Secure Ultrasound Patient data Protection and Optimization Tool using de-marked model
 
 
 # Member
@@ -10,10 +10,8 @@ The team name that developed the **HUFS BME Capstone 2024** project is **BME19**
 | Lead <br/> AI Engineer | Fullstack <br/> Engineer |
 
 
-# DL-WEB Overall Flow Chart 
-![overallflow](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/08c21c7f-e8da-4f48-a718-bdfe942c3801)
-
-
+# SUPPORT Flow Chart 
+![overallflow](https://github.com/dablro12/HUFS-BME-AI-WEB/assets/54443308/acb53160-6478-467f-afc3-10e23348bf8a)
 
 ## AI-Part : OCI-GAN: Ovarian Cyst Inpaint GAN 
 
