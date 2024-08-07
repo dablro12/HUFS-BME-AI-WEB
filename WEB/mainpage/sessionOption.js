@@ -1,7 +1,7 @@
 var options = {  
     host: '127.0.0.1',
     user: 'root',
-    password: 'dudwls1234',
+    password: '',
     database: 'crud',
     port: 3306,
 
